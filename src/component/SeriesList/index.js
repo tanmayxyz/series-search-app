@@ -3,10 +3,9 @@ import './index.css';
 import {Link } from 'react-router-dom';
 
 const SeriesListItem =  ({item}) => {
-    console.log(item);
+    
     return (<li> 
     <Link to = {`/series/${item.show.id}`} >
-    
     
     {item.show.name}
     </Link>  

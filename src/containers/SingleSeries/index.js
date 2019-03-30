@@ -10,6 +10,7 @@ class SingleSeries extends Component {
     }
 
     componentDidMount(){
+        console.log(this.props);
         const {id}= this.props.match.params;
 
         fetch(`http://api.tvmaze.com/shows/${id}?embed=episodes`)
